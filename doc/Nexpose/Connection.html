@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Nexpose::Connection
+  
+    &mdash; Documentation by YARD 0.8.7.6
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!Nexpose/Connection.html";
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'>Nexpose</span>
+     &raquo; 
+    <span class="title">Connection</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: Nexpose::Connection
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Nexpose::Connection</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib\nexpose-functions.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAsset-instance_method" title="#getAsset (instance method)">- (Asset) <strong>getAsset</strong>(host) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get an Asset object for the specified host IP.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getScanTemplatesbyId-instance_method" title="#getScanTemplatesbyId (instance method)">- (Hash) <strong>getScanTemplatesbyId</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a Hash object containing pairs of scan template names/ids where the
+Hash key is the scan template id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getScanTemplatesbyName-instance_method" title="#getScanTemplatesbyName (instance method)">- (Hash) <strong>getScanTemplatesbyName</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a Hash object containing pairs of scan template names/ids where the
+Hash key is the scan template name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getSitesInfobyId-instance_method" title="#getSitesInfobyId (instance method)">- (Hash) <strong>getSitesInfobyId</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a Hash object containing pairs of site ids/names where the Hash key is
+the site id.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getSitesInfobyName-instance_method" title="#getSitesInfobyName (instance method)">- (Hash) <strong>getSitesInfobyName</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a Hash object containing pairs of site names/ids where the Hash key is
+the site name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#notScannedSince-instance_method" title="#notScannedSince (instance method)">- (Array[Asset]) <strong>notScannedSince</strong>(days) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get an array of Asset objects for hosts that have not been scanned in 'X'
+days.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#siteid_to_name-instance_method" title="#siteid_to_name (instance method)">- (String) <strong>siteid_to_name</strong>(siteid) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the name for a site ID.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sitename_to_id-instance_method" title="#sitename_to_id (instance method)">- (Fixnum) <strong>sitename_to_id</strong>(sitename) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the ID for a site name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validate_engineid-instance_method" title="#validate_engineid (instance method)">- (Boolean) <strong>validate_engineid</strong>(engID) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Check if an input is a valid engine id.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="getAsset-instance_method">
+  
+    - (<tt>Asset</tt>) <strong>getAsset</strong>(host) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get an Asset object for the specified host IP.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>host</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the hostname to get an Asset object for.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Asset</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the Asset object for the host.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 111</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getAsset'>getAsset</span><span class='lparen'>(</span><span class='id identifier rubyid_host'>host</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_filter'>filter</span><span class='lparen'>(</span><span class='const'>Nexpose</span><span class='op'>::</span><span class='const'>Search</span><span class='op'>::</span><span class='const'>Field</span><span class='op'>::</span><span class='const'>ASSET</span><span class='comma'>,</span> <span class='const'>Nexpose</span><span class='op'>::</span><span class='const'>Search</span><span class='op'>::</span><span class='const'>Operator</span><span class='op'>::</span><span class='const'>IS</span><span class='comma'>,</span> <span class='id identifier rubyid_host'>host</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getScanTemplatesbyId-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>getScanTemplatesbyId</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a Hash object containing pairs of scan template names/ids where the
+Hash key is the scan template id.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>object with scan template ids as the keys and scan template names as the
+values.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92
+93
+94</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getScanTemplatesbyId'>getScanTemplatesbyId</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_templateinfo'>templateinfo</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_scan_templates'>list_scan_templates</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_template'>template</span><span class='op'>|</span>
+        <span class='id identifier rubyid_templateinfo'>templateinfo</span><span class='lbracket'>[</span><span class='id identifier rubyid_template'>template</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_template'>template</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
+    <span class='rbrace'>}</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_templateinfo'>templateinfo</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getScanTemplatesbyName-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>getScanTemplatesbyName</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a Hash object containing pairs of scan template names/ids where the
+Hash key is the scan template name.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>object with scan template names as the keys and scan template ids as the
+values.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100
+101
+102
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 99</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getScanTemplatesbyName'>getScanTemplatesbyName</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_templateinfo'>templateinfo</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_scan_templates'>list_scan_templates</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_template'>template</span><span class='op'>|</span>
+        <span class='id identifier rubyid_templateinfo'>templateinfo</span><span class='lbracket'>[</span><span class='id identifier rubyid_template'>template</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_template'>template</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+    <span class='rbrace'>}</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_templateinfo'>templateinfo</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getSitesInfobyId-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>getSitesInfobyId</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a Hash object containing pairs of site ids/names where the Hash key is
+the site id.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>object with site ids as the keys and site names as the values.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68
+69
+70
+71
+72</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getSitesInfobyId'>getSitesInfobyId</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_sitesinfo'>sitesinfo</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_sites'>list_sites</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_site'>site</span><span class='op'>|</span>
+        <span class='id identifier rubyid_sitesinfo'>sitesinfo</span><span class='lbracket'>[</span><span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
+    <span class='rbrace'>}</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_sitesinfo'>sitesinfo</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getSitesInfobyName-instance_method">
+  
+    - (<tt>Hash</tt>) <strong>getSitesInfobyName</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a Hash object containing pairs of site names/ids where the Hash key is
+the site name.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>object with site names as the keys and site ids as the values.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+77
+78
+79
+80
+81
+82
+83</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 77</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_getSitesInfobyName'>getSitesInfobyName</span><span class='lparen'>(</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_sitesinfo'>sitesinfo</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_sites'>list_sites</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_site'>site</span><span class='op'>|</span>
+        <span class='id identifier rubyid_sitesinfo'>sitesinfo</span><span class='lbracket'>[</span><span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+    <span class='rbrace'>}</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_sitesinfo'>sitesinfo</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="notScannedSince-instance_method">
+  
+    - (<tt>Array[Asset]</tt>) <strong>notScannedSince</strong>(days) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get an array of Asset objects for hosts that have not been scanned in 'X'
+days.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>days</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number of days back to check for unscanned hosts.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array[Asset]</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>array of Asset objects for the hosts.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 119</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_notScannedSince'>notScannedSince</span><span class='lparen'>(</span><span class='id identifier rubyid_days'>days</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_filter'>filter</span><span class='lparen'>(</span><span class='const'>Nexpose</span><span class='op'>::</span><span class='const'>Search</span><span class='op'>::</span><span class='const'>Field</span><span class='op'>::</span><span class='const'>SCAN_DATE</span><span class='comma'>,</span> <span class='const'>Nexpose</span><span class='op'>::</span><span class='const'>Search</span><span class='op'>::</span><span class='const'>Operator</span><span class='op'>::</span><span class='const'>EARLIER_THAN</span><span class='comma'>,</span> <span class='id identifier rubyid_days'>days</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="siteid_to_name-instance_method">
+  
+    - (<tt>String</tt>) <strong>siteid_to_name</strong>(siteid) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the name for a site ID.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>siteid</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a site id to look up.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the name of the site.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_siteid_to_name'>siteid_to_name</span><span class='lparen'>(</span><span class='id identifier rubyid_siteid'>siteid</span><span class='rparen'>)</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_sites'>list_sites</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_site'>site</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span> <span class='op'>==</span> <span class='id identifier rubyid_siteid'>siteid</span>
+            <span class='kw'>return</span> <span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>
+        <span class='kw'>end</span>
+    <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sitename_to_id-instance_method">
+  
+    - (<tt>Fixnum</tt>) <strong>sitename_to_id</strong>(sitename) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the ID for a site name.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>sitename</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the site name to look up.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the id for the site name.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45
+46
+47
+48
+49</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_sitename_to_id'>sitename_to_id</span><span class='lparen'>(</span><span class='id identifier rubyid_sitename'>sitename</span><span class='rparen'>)</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_sites'>list_sites</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_site'>site</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='op'>==</span> <span class='id identifier rubyid_sitename'>sitename</span>
+            <span class='kw'>return</span> <span class='id identifier rubyid_site'>site</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+        <span class='kw'>end</span>
+    <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validate_engineid-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>validate_engineid</strong>(engID) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Check if an input is a valid engine id.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>engID</span>
+      
+      
+        <span class='type'>(<tt>Fixnum</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>an id to check against the list of valid engine ids.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if engID is valid.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib\nexpose-functions.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_validate_engineid'>validate_engineid</span><span class='lparen'>(</span><span class='id identifier rubyid_engID'>engID</span><span class='rparen'>)</span>
+    <span class='comment'># Create array of engine ids for validation
+</span>    <span class='id identifier rubyid_engine_ids'>engine_ids</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='kw'>for</span> <span class='id identifier rubyid_eng'>eng</span> <span class='kw'>in</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_list_engines'>list_engines</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_engine_ids'>engine_ids</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_eng'>eng</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span>
+    <span class='kw'>end</span>
+
+    <span class='kw'>return</span> <span class='id identifier rubyid_engine_ids'>engine_ids</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_engID'>engID</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span><span class='rparen'>)</span>    
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Fri Dec  5 14:41:35 2014 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.6 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
