@@ -1,7 +1,6 @@
 Gem::Specification.new do |s|
   s.name	= 'nexpose-functions'
   s.version	= '0.0.6'
-  s.date	= '2015-4-27'
   s.summary	= "Additional Nexpose API functions."
   s.description = "Additional useful functions for use with the Nexpose API."
   s.authors	= ["Red5d"]
