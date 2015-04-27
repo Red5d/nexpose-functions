@@ -1,6 +1,5 @@
 # Nexpose functions
 
-require "nexpose"
 
 # Log into a Nexpose console. Returns a connection object.
 #
@@ -15,6 +14,10 @@ def NexposeLogin(consoleIP)
     password = STDIN.noecho(&:gets).chomp
     puts ""
 
+    # Blank the proxy variables so they won't be used to connect to the Console.
+    ENV['http_proxy'] = nil
+    ENV['https_proxy'] = nil
+    
     # Create connection and login.
     nsc = Nexpose::Connection.new(consoleIP, username, password)
     nsc.login
@@ -138,7 +141,7 @@ class Nexpose::Site
         end
 
         puts "Saving site assets..."
-        @site.assets = @hostnames
+        @site.included_addresses = @hostnames
         @site.save(@nsc)
         puts "Done."
         puts "Site #{self.id} now has #{@hostnames.length} assets."
